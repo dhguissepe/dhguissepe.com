@@ -1,13 +1,13 @@
-import React from 'react'
-import Navbar from './components/Navbar.js'
+import React, {Fragment, Component} from 'react'
+import Header from './components/Header.js'
 
-class App extends React.Component {
+class App extends Component {
   render() {
     return (
-      <div className="">
-        <Navbar />
+      <Fragment>
+        <Header />
         <p>Probando</p>
-      </div>
+      </Fragment>
     )
   }
 }

@@ -10,19 +10,19 @@
 @import 'base-style/text';
 @import 'base-style/buttons';
 //pages
-@import 'pages/badgeNew';
-@import 'pages/badgeDetails';
-@import 'pages/badgeEdit';
-@import 'pages/badges';
-@import 'pages/notFound';
-@import 'pages/home';
+// @import 'pages/badgeNew';
+// @import 'pages/badgeDetails';
+// @import 'pages/badgeEdit';
+// @import 'pages/badges';
+// @import 'pages/notFound';
+// @import 'pages/home';
 //components
-@import 'components/badge';
-@import 'components/navbar';
-@import 'components/badgeListElement';
-@import 'components/pageLoading';
-@import 'components/pageError';
-@import 'components/modal';
-@import 'components/deleteBadgeModal';
+// @import 'components/badge';
+@import 'components/header';
+// @import 'components/badgeListElement';
+// @import 'components/pageLoading';
+// @import 'components/pageError';
+// @import 'components/modal';
+// @import 'components/deleteBadgeModal';
 //layout-styles
 @import 'layout/layout';

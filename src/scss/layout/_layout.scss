@@ -3,9 +3,5 @@
 body {
   font-family: $font-family;
   background-color: $ultra-light-gray;
-}
-
-* {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
 }
