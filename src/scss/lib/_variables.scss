@@ -1,0 +1,31 @@
+//Setting, Variables and Constants
+
+//Main Colors
+$ultra-dark-blue: #1B1B25;
+$dark-blue: #1C3643;
+$platzi-green-text: #98CA3F;
+$platzi-primary: #7DCD40;
+$platzi-danger: #CD4040;
+$twitter-blue: #03a7ea;
+
+//gray scale
+$black: black;
+$dark-gray: #343a40;
+$ultra-light-gray: #f0efef;
+$white: white;
+
+//buttons settings
+$btn-classes: 'primary' 'danger';
+$primary-shadow-focus: 0 0 0 0.2rem rgba(125, 205, 64, 0.5);
+$danger-shadow-focus: 0 0 0 0.2rem rgba(255, 64, 64, 0.5);
+
+//badge settings
+$card-object-fit: cover;
+
+//hero settings
+$hero-background: url('../../images/stars.svg') $ultra-dark-blue;
+
+//font families
+$font-family: 'Lato', 'Helvetica Neue', sans-serif;
+$h1-font-family: 'Anton', sans-serif;
+

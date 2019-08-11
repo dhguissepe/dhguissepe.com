@@ -1,0 +1,28 @@
+/*font-styles*/
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+//lib: variables, functions and settings
+@import 'lib/variables';
+@import 'lib/functions';
+@import 'lib/mixins';
+//base-style
+@import 'base-style/links';
+@import 'base-style/text';
+@import 'base-style/buttons';
+//pages
+@import 'pages/badgeNew';
+@import 'pages/badgeDetails';
+@import 'pages/badgeEdit';
+@import 'pages/badges';
+@import 'pages/notFound';
+@import 'pages/home';
+//components
+@import 'components/badge';
+@import 'components/navbar';
+@import 'components/badgeListElement';
+@import 'components/pageLoading';
+@import 'components/pageError';
+@import 'components/modal';
+@import 'components/deleteBadgeModal';
+//layout-styles
+@import 'layout/layout';

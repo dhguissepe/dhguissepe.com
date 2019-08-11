@@ -1,0 +1,7 @@
+//MIXINS
+
+@mixin btn-class ($color) {
+  color: $white;
+  background-color: $color;
+  border-color: $color;
+}
