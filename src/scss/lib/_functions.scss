@@ -1,4 +1,6 @@
-@function layer($element)
-{
+//FUNCTIONS
+
+//This function stablishes z-index based on the list "$layer" at variables.
+@function layer($element) {
   @return map-get($layer, $element);
 }

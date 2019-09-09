@@ -1,22 +1,21 @@
 import React from 'react'
-import NavbarButtons from './NavbarButtons'
+import Navbar from './Navbar'
 
 function Header() {
   const navbarButtonNames = [
     'Home',
     'About me',
+    'Blog',
     'Portfolio',
     'Contact me'
   ]
 
   return (
     <div className="header-wrapper">
-      <div className="header">
+      <header className="header">
         <h1>D.H. Guissepe</h1>
-        <nav>
-          <NavbarButtons buttonNames={navbarButtonNames} />
-        </nav>
-      </div>
+          <Navbar buttonNames={navbarButtonNames} />
+      </header>
     </div>
   )
 }

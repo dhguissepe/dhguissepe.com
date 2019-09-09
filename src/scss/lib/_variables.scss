@@ -1,31 +1,48 @@
 //Setting, Variables and Constants
 
-//Main Colors
-$ultra-dark-blue: #1B1B25;
-$dark-blue: #1C3643;
-$platzi-green-text: #98CA3F;
-$platzi-primary: #7DCD40;
-$platzi-danger: #CD4040;
+//COLORS
+
+//blue scale
+$ultra-dark-blue: rgb(22, 22, 29);
+$darker-blue: #1B1B25;
+$dark-blue: rgb(32, 32, 46);
+$blue: #1C3643;
+$skyblue: #459fc7;
 $twitter-blue: #03a7ea;
+$cian: #5ce1e6;
+
+//red scale
+$danger: #CD4040;
 
 //gray scale
 $black: black;
+$ultra-dark-gray: #20222a;
 $dark-gray: #343a40;
+$mid-gray: #545454;
 $ultra-light-gray: #f0efef;
 $white: white;
+
+//OTHER SETTINGS
 
 //buttons settings
 $btn-classes: 'primary' 'danger';
 $primary-shadow-focus: 0 0 0 0.2rem rgba(125, 205, 64, 0.5);
 $danger-shadow-focus: 0 0 0 0.2rem rgba(255, 64, 64, 0.5);
 
-//badge settings
-$card-object-fit: cover;
-
 //hero settings
-$hero-background: url('../../images/stars.svg') $ultra-dark-blue;
+$hero-background: url('../../images/BannerBackground.png');
+$hero-overlay-1-background: rgba($mid-gray, 0.5);
+$hero-overlay-2-background: rgba($black, 0.75);
+$hero-overlay-2-height: 70%;
 
 //font families
 $font-family: 'Lato', 'Helvetica Neue', sans-serif;
-$h1-font-family: 'Anton', sans-serif;
+$h1-font-family:'Raleway', sans-serif;
 
+//z-index values
+$layer: (
+  bg: -1,
+  overlay1: 20,
+  overlay2: 40,
+  overlay-text: 60,
+);

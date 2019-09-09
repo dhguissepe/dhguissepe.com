@@ -1,0 +1,73 @@
+/*HERO*/
+
+.hero {
+  background-image: $hero-background;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  position: relative;
+}
+
+.hero-overlay-1 {
+  @include overlay(overlay1, $hero-overlay-1-background);
+}
+
+.hero-overlay-2 {
+  @include overlay(overlay1, $hero-overlay-2-background);
+  align-items: center;
+  display: flex;
+  height: $hero-overlay-2-height;
+  justify-content: center;
+  top: (100% - $hero-overlay-2-height)/2;
+}
+
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr auto auto 1fr;
+  grid-template-areas: ". logo description ."
+                        ". logo title ."
+                        "bar bar bar bar";
+  width: 800px;
+}
+
+.hero-logo {
+  grid-area: logo;
+  max-width: 100px;
+  padding: 5px 15px 0 0;
+}
+
+.hero-description {
+  text-transform: uppercase;
+  align-items: center;
+  display: flex;
+  grid-area: description;
+  justify-content: center;
+  h2 {
+    font-weight: 400;
+    font-size: 1.19em;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.hero-title {
+  text-transform: uppercase;
+  font-size: 2.6em;
+  grid-area: title;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  h1 {
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.hero-bar {
+  @include two-color-gradient-bg($skyblue, $cian);
+  display: block;
+  height: 20px;
+  grid-area: bar;
+  margin-top: 20px;
+}

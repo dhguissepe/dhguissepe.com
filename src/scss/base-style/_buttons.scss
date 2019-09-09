@@ -3,20 +3,21 @@
 .navbar-button {
 
   a{
-    color: rgba(255, 255, 255, 0.849);
+    color: rgba(200, 200, 200, 0.849);
     padding: 0 1rem;
     text-decoration: none;
+    transition: .5s;
 
     &:hover {
       color: $white;
     }
   }
 
-  &:nth-last-child(1) a {
+  &:last-child a {
     padding-right: 0;
   }
 
-  &:nth-last-child(4) a {
+  &:first-child a {
     padding-left: 0;
   }
 }

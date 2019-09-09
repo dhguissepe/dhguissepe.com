@@ -1,0 +1,10 @@
+/*FOOTER*/
+
+.footer {
+  @include footer-background-color;
+  align-items: center;
+  color: $white;
+  display: flex;
+  height: 80px;
+  justify-content: center;
+}
