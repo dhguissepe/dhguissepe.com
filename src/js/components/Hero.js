@@ -17,9 +17,7 @@ function Hero() {
             <div className="hero-title">
               <h1>D.H. Guissepe</h1>
             </div>
-            <div className="hero-bar">
-
-            </div>
+            <div className="hero-bar" />
           </div>
         </div>
       </div>

@@ -1,5 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
+import Logo from './Logo'
+import { Link } from 'react-router-dom'
 
 function Header() {
   const navbarButtonNames = [
@@ -13,8 +15,10 @@ function Header() {
   return (
     <div className="header-wrapper">
       <header className="header">
-        <h1>D.H. Guissepe</h1>
-          <Navbar buttonNames={navbarButtonNames} />
+        <Link to="/" className="header-logo">
+          <Logo />
+        </Link>
+        <Navbar buttonNames={navbarButtonNames} />
       </header>
     </div>
   )

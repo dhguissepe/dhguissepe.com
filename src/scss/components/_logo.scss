@@ -1,5 +1,154 @@
 /*LOGO*/
 
+//This code can be heavily reduced, I will do it when I have time.
+
 .logo {
-  max-width: inherit;
+  display: flex;
+  perspective-origin: top;
+  perspective: 25px;
+  position: relative;
+  transform-origin: center;
+}
+
+.p-1 {
+  align-self: flex-end;
+  margin-right: 2.5px;
+  transform: rotateY(-20deg);
+  transform-origin: right;
+}
+
+.p-2 {
+  margin-left: 2.5px;
+  transform: rotateY(20deg);
+  transform-origin: left;
+}
+
+.sq-d, .sq-g {
+  height: $hero-logo-size;
+  width: $hero-logo-size;
+}
+
+.sq-d-part-1, .sq-d-part-2, .sq-d-part-3 {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.sq-d-part-1 {
+  border: 25px solid $skyblue;
+  border-bottom: 0;
+  height: 55%;
+}
+
+.sq-d-part-2 {
+  border: 25px solid $skyblue;
+  border-bottom: 0;
+  border-left: 0;
+  border-top: 0;
+  height: 20%;
+}
+
+.sq-d-part-3 {
+  border: 25px solid $skyblue;
+  border-top: 0;
+  height: 25%;
+}
+
+.sq-g-part-1, .sq-g-part-2, .sq-g-part-3 {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.sq-g-part-1 {
+  border: 25px solid $white;
+  border-bottom: 0;
+  height: 25%;
+}
+
+.sq-g-part-2 {
+  border: 25px solid $white;
+  border-bottom: 0;
+  border-right: 0;
+  border-top: 0;
+  height: 30%;
+}
+
+.sq-g-part-3 {
+  border: 25px solid $white;
+  border-top: 0;
+  height: 45%;
+}
+
+//changes over header-logo
+
+.header-logo {
+  position: relative;
+  top: 2px;
+  left: -30px;
+  cursor: pointer;
+
+  .logo {
+    perspective: $header-logo-size * 0.25;
+  }
+
+  .p-1 {
+    margin-right: $header-logo-size * 0.025;
+  }
+
+  .p-2 {
+    margin-left: $header-logo-size * 0.025;
+  }
+
+  .sq-d, .sq-g {
+    height: $header-logo-size;
+    width: $header-logo-size;
+  }
+
+  .sq-d-part-1 {
+    border: $header-logo-size * 0.25 solid $skyblue;
+    border-bottom: 0;
+    height: 55%;
+  }
+
+  .sq-d-part-2 {
+    border: $header-logo-size * 0.25 solid $skyblue;
+    border-bottom: 0;
+    border-left: 0;
+    border-top: 0;
+    height: 20%;
+  }
+
+  .sq-d-part-3 {
+    border: $header-logo-size * 0.25 solid $skyblue;
+    border-top: 0;
+    height: 25%;
+  }
+
+  .sq-g-part-1 {
+    border: $header-logo-size * 0.25 solid $white;
+    border-bottom: 0;
+    height: 25%;
+    transition: 0.3s;
+  }
+
+  .sq-g-part-2 {
+    border: $header-logo-size * 0.25 solid $white;
+    border-bottom: 0;
+    border-right: 0;
+    border-top: 0;
+    height: 30%;
+    transition: 0.3s;
+  }
+
+  .sq-g-part-3 {
+    border: $header-logo-size * 0.25 solid $white;
+    border-top: 0;
+    height: 45%;
+    transition: 0.3s;
+  }
+}
+
+.header-logo:hover {
+  .sq-g-part-1, .sq-g-part-2, .sq-g-part-3 {
+    border-color: $skyblue;
+  }
 }
