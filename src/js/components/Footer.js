@@ -1,9 +1,30 @@
 import React from 'react'
+import Navbar from './Navbar'
+import Logo from './Logo'
 
 function Footer() {
+  const navbarButtonNames = [
+    'Home',
+    'About me',
+    'Blog',
+    'Portfolio',
+    'Contact me'
+  ]
+
   return (
     <footer className="footer">
-      <p>Dream on, but always keep marching on</p>
+      <Navbar buttonNames={navbarButtonNames} />
+      <div className="footer-info">
+        <div className="footer-brand">
+          <p className="owner">D.H.G</p>
+          <div className="footer-logo">
+            <Logo/>
+          </div>
+          <p>2019</p>
+        </div>
+        <p className="slogan">Dream on, but always keep marching on</p>
+        <p className="designer">Designed and Built by: <a href="https://twitter.com/dhguissepe" target="blank">@dhguissepe</a></p>
+      </div>
     </footer>
   )
 }

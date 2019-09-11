@@ -5,6 +5,36 @@
   align-items: center;
   color: $white;
   display: flex;
-  height: 80px;
+  flex-direction: column;
   justify-content: center;
+}
+
+.footer-info {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 15px;
+  max-width: 1280px;
+  width: 100%;
+
+  p {
+    margin: 0;
+  }
+
+  .footer-brand {
+    display:flex;
+  }
+
+  .slogan {
+    letter-spacing: 1.5px;
+    text-align: center;
+  }
+
+  .designer {
+    text-align: right;
+    a {
+      color: $white;
+      text-decoration: none;
+    }
+  }
 }

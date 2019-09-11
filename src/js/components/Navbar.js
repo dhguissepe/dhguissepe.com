@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Navbar(props) {
   return (
@@ -7,7 +8,7 @@ function Navbar(props) {
         {props.buttonNames.map( (item, index) => {
           return (
             <li className="navbar-button" key={index} >
-              <a href="#">{item}</a>
+              <Link href="#">{item}</Link>
             </li>
           )
         })}

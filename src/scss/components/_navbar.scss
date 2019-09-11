@@ -1,0 +1,26 @@
+/*NAVBAR*/
+
+//standard navbar / header navbar
+.navbar {
+  display: flex;
+  list-style: none;
+  padding: 0;
+
+  li {
+    display: block;
+    font-size: 1.2em;
+  }
+}
+
+//footer navbar
+
+.footer nav {
+  margin: 2em 0;
+  width: 100%;
+  ul {
+    justify-content: space-evenly;
+    a {
+      padding: 0;
+    }
+  }
+}

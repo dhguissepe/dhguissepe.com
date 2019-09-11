@@ -29,8 +29,8 @@ $btn-classes: 'primary' 'danger';
 $primary-shadow-focus: 0 0 0 0.2rem rgba(125, 205, 64, 0.5);
 $danger-shadow-focus: 0 0 0 0.2rem rgba(255, 64, 64, 0.5);
 
-//header-settings
-$header-logo-size: 50px;
+//header settings
+$header-logo-size: 45px;
 
 //hero settings
 $hero-background: url('../../images/BannerBackground.png');
@@ -38,6 +38,9 @@ $hero-overlay-1-background: rgba($mid-gray, 0.5);
 $hero-overlay-2-background: rgba($black, 0.75);
 $hero-overlay-2-height: 70%;
 $hero-logo-size: 110px;
+
+//footer settings
+$footer-logo-size: 30px;
 
 //font families
 $font-family: 'Lato', 'Helvetica Neue', sans-serif;
