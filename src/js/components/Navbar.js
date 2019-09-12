@@ -8,7 +8,7 @@ function Navbar(props) {
         {props.buttonNames.map( (item, index) => {
           return (
             <li className="navbar-button" key={index} >
-              <Link href="#">{item}</Link>
+              <Link to="/" href="#">{item}</Link>
             </li>
           )
         })}
