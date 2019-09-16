@@ -12,7 +12,7 @@ function Hero() {
               <Logo />
             </div>
             <div className="hero-description">
-              <h2>Front-End Engineer | React Developer | Website Builder</h2>
+              <h2>Full Stack Developer | React Frontend Expert</h2>
             </div>
             <div className="hero-title">
               <h1>D.H. Guissepe</h1>

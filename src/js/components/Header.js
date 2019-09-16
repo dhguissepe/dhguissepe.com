@@ -13,14 +13,14 @@ function Header() {
   ]
 
   return (
-    <div className="header-wrapper">
-      <header className="header">
+    <header className="header">
+      <div className="header-wrapper">
         <Link to="/" className="header-logo">
           <Logo />
         </Link>
         <Navbar buttonNames={navbarButtonNames} />
-      </header>
-    </div>
+      </div>
+    </header>
   )
 }
 

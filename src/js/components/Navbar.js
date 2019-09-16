@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 
 function Navbar(props) {
   return (
-    <nav>
-      <ul className="navbar">
+    <nav className="navbar">
+      <ul>
         {props.buttonNames.map( (item, index) => {
           return (
             <li className="navbar-button" key={index} >

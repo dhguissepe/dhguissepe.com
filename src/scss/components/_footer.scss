@@ -1,7 +1,7 @@
 /*FOOTER*/
 
 .footer {
-  @include footer-background-color;
+  @include three-color-gradient-bg($ultra-dark-blue, $darker-blue, $dark-blue);
   align-items: center;
   color: $white;
   display: flex;
@@ -9,11 +9,11 @@
   justify-content: center;
 }
 
-.footer-info {
+.footer-wrapper {
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-bottom: 16px;
+  margin: 16px 0;
   max-width: 1280px;
   width: 100%;
 
@@ -23,15 +23,23 @@
 
   .footer-brand {
     display:flex;
+    align-items: center;
   }
 
   .slogan {
+    align-items: center;
+    display: flex;
+    justify-content: center;
     letter-spacing: 1.5px;
-    text-align: center;
   }
 
   .designer {
-    text-align: right;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    p {
+      text-align: right;
+    }
     a {
       color: $white;
       text-decoration: none;

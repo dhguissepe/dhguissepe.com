@@ -14,7 +14,7 @@ function Footer() {
   return (
     <footer className="footer">
       <Navbar buttonNames={navbarButtonNames} />
-      <div className="footer-info">
+      <div className="footer-wrapper">
         <div className="footer-brand">
           <p className="owner">D.H.G</p>
           <div className="footer-logo">
@@ -23,7 +23,7 @@ function Footer() {
           <p>2019</p>
         </div>
         <p className="slogan">Dream on, but always keep marching on</p>
-        <p className="designer">Designed and Built by: <a href="https://twitter.com/dhguissepe" target="blank">@dhguissepe</a></p>
+        <div className="designer"><p>Designed and Built by: <a href="https://twitter.com/dhguissepe" target="blank">@dhguissepe</a></p></div>
       </div>
     </footer>
   )

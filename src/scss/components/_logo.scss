@@ -91,9 +91,9 @@
   @include dh-logo($header-logo-size);
 
   cursor: pointer;
-  left: -30px;
+  left: -23px;
   position: relative;
-  top: 4px;
+  top: 9px;
 
   &:hover {
     .sq-g-part-1, .sq-g-part-2, .sq-g-part-3 {
@@ -108,6 +108,6 @@
   @include dh-logo($footer-logo-size);
   margin: 0 -8px;
   position: relative;
-  top: -3px;
+  top: 2px;
 }
 

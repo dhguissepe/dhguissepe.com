@@ -3,11 +3,6 @@
 /*HEADER AND NAVBAR*/
 
 .header-wrapper {
-  @include footer-background-color
-  // background-color: $ultra-dark-gray;
-}
-
-.header {
   color: $white;
   display: flex;
   justify-content: space-between;
@@ -15,12 +10,9 @@
   max-width: 1280px;
   padding: 0.5rem 0;
   width: 100%;
+}
 
-  h1 {
-    align-items: center;
-    display: flex;
-    margin: 0;
-    text-transform: capitalize;
-  }
+.header {
+  @include three-color-gradient-bg($ultra-dark-blue, $darker-blue, $dark-blue);
 }
 
