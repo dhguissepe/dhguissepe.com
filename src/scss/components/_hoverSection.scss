@@ -1,0 +1,20 @@
+/*HOVER SECTION*/
+
+.hover-section {
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  color: $dark-blue;
+  font-size: 4em;
+}
+
+.brand-bio {
+  display: flex;
+  height: 400px;
+  background: $darker-blue;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  font-size: 4em;
+}

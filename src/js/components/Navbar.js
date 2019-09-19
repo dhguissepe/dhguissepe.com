@@ -7,8 +7,14 @@ function Navbar(props) {
       <ul>
         {props.buttonNames.map( (item, index) => {
           return (
-            <li className="navbar-button" key={index} >
-              <Link to="/" href="#">{item}</Link>
+            <li className="navbar-links" key={ index } >
+              <Link
+                className={ `navbar-link ${ item.state }` }
+                to="/"
+                href="#"
+              >
+                { item.text }
+              </Link>
             </li>
           )
         })}

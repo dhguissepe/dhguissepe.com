@@ -4,11 +4,26 @@ import Logo from './Logo'
 
 function Footer() {
   const navbarButtonNames = [
-    'Home',
-    'About me',
-    'Blog',
-    'Portfolio',
-    'Contact me'
+    {
+      text: 'Home',
+      state: 'active'
+    },
+    {
+      text: 'About me',
+      state: false
+    },
+    {
+      text: 'Blog',
+      state: false
+    },
+    {
+      text: 'Portfolio',
+      state: false
+    },
+    {
+      text: 'Contact me',
+      state: false
+    }
   ]
 
   return (

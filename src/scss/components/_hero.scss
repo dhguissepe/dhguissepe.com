@@ -4,7 +4,8 @@
   background-image: $hero-background;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 70vh;
+  height: $hero-height;
+  min-height: 300px;
   position: relative;
 }
 

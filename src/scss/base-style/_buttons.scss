@@ -1,23 +1,70 @@
 /*BUTTONS*/
 
-.navbar-button {
+//btn template
+%btn {
+  background: transparent;
+  border: 1px solid $darker-blue;
+  border-radius: 3px;
+  color: $darker-blue;
+  font-family: $body-font-family;
+  font-size: 1.5em;
+  padding: 0.6em 0.5em;
+  transition: 0.3s;
+  cursor: pointer;
+  outline: none;
 
-  a{
-    color: rgba(200, 200, 200, 0.849);
-    padding: 0 1rem;
-    text-decoration: none;
-    transition: .3s;
+  &:hover {
+    background-color: $darker-blue;
+    color: $white;
+  }
+}
 
-    &:hover {
-      color: $white;
-    }
+//Modifiers
+@mixin btn-modifier($main-color, $hover-background-color) {
+  background-color: $main-color;
+  border-color: $main-color;
+  color: $white;
+
+  &:hover {
+    background-color: $hover-background-color;
+    border-color: $hover-background-color;
+  }
+}
+
+@mixin btn-outline-modifier($main-color, $hover-font-color) {
+  border: 1px solid $main-color;
+  color: $main-color;
+
+  &:hover {
+    background-color: $main-color;
+    color: $hover-font-color;
+  }
+}
+
+/*MAIN STYLES*/
+
+.btn-primary {
+  @extend %btn;
+  @include btn-modifier($skyblue, darken($skyblue, 10%));
+}
+
+.btn-outline {
+  @extend %btn;
+  @include btn-outline-modifier($dark-blue, $white);
+}
+
+/*SPECIFIC MODIFICATIONS*/
+
+/*buttons in the CTA*/
+
+.CTA {
+  .btn-primary {
+    max-width: 470px;
+    width: 100%;
   }
 
-  &:last-child a {
-    padding-right: 0;
-  }
-
-  &:first-child a {
-    padding-left: 0;
+  .btn-outline {
+    max-width: 470px;
+    width: 100%;
   }
 }

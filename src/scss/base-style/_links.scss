@@ -1,9 +1,23 @@
 /*LINKS*/
 
-a.link-unstyled {
-  color: inherit;
-  &:hover {
-    color: inherit;
+.navbar-links {
+
+  .navbar-link{
+    color: $white;
+    padding: 0 1rem;
     text-decoration: none;
+    transition: .3s;
+
+    &:hover, &.active {
+      color: lighten($skyblue, 10%);
+    }
+  }
+
+  &:last-child a {
+    padding-right: 0;
+  }
+
+  &:first-child a {
+    padding-left: 0;
   }
 }

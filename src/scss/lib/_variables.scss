@@ -6,13 +6,14 @@
 $ultra-dark-blue: rgb(22, 22, 29);
 $darker-blue: #1B1B25;
 $dark-blue: rgb(32, 32, 46);
-$blue: #1C3643;
-$skyblue: #459fc7;
+$dark-skyblue: #1C3643;
+$blue: #466da6;
+$skyblue: darken(#459fc7, 10%);
 $twitter-blue: #03a7ea;
 $cian: #5ce1e6;
 
 //red scale
-$danger: #CD4040;
+$danger: #e1445e;
 
 //gray scale
 $black: black;
@@ -28,6 +29,7 @@ $white: white;
 $btn-classes: 'primary' 'danger';
 $primary-shadow-focus: 0 0 0 0.2rem rgba(125, 205, 64, 0.5);
 $danger-shadow-focus: 0 0 0 0.2rem rgba(255, 64, 64, 0.5);
+$logo-link-color: rgba(200, 200, 200, 0.849);
 
 //header settings
 $header-logo-size: 38px;
@@ -43,8 +45,14 @@ $hero-logo-size: 110px;
 $footer-logo-size: 30px;
 
 //font families
-$font-family: 'Lato', 'Helvetica Neue', sans-serif;
+$body-font-family: 'Lato', 'Helvetica Neue', sans-serif;
 $h1-font-family:'Raleway', sans-serif;
+
+//Heights of every section
+$hero-height: 70vh;
+$CTA-height: 100vh;
+// $brand-bio-height: auto;
+// $hover-section-height: auto;
 
 //z-index values
 $layer: (

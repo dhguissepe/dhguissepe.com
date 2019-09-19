@@ -95,8 +95,17 @@
   position: relative;
   top: 9px;
 
+  .sq-g-part-1, .sq-g-part-2, .sq-g-part-3,
+  .sq-d-part-1, .sq-d-part-2, .sq-d-part-3 {
+      border-color: $logo-link-color;
+    }
+
   &:hover {
     .sq-g-part-1, .sq-g-part-2, .sq-g-part-3 {
+      border-color: $white;
+    }
+
+    .sq-d-part-1, .sq-d-part-2, .sq-d-part-3 {
       border-color: $skyblue;
     }
   }

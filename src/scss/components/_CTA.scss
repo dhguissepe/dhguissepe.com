@@ -1,9 +1,42 @@
 /*CALL TO ACTION*/
 
 .CTA {
-  height: 100vh;
-  display: flex;
   align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: $CTA-height;
   justify-content: center;
+  min-height: 600px;
+}
+
+.CTA-title {
+  color: $dark-blue;
+  text-align: center;
+  font-weight: 400;
   font-size: 4em;
+}
+
+.CTA-text {
+  color: $dark-blue;
+  font-size: 2em;
+  margin: 0 auto 2em;
+  max-width: 800px;
+  text-align: center;
+}
+
+.CTA-wrapper {
+  max-width: 1024px;
+  width: 100%;
+}
+
+.CTA-buttons-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 4em;
+}
+
+.CTA-or-between-btn {
+  line-height: 3.6em;
+  text-transform: uppercase;
 }

@@ -5,11 +5,26 @@ import { Link } from 'react-router-dom'
 
 function Header() {
   const navbarButtonNames = [
-    'Home',
-    'About me',
-    'Blog',
-    'Portfolio',
-    'Contact me'
+    {
+      text: 'Home',
+      state: 'active'
+    },
+    {
+      text: 'About me',
+      state: false
+    },
+    {
+      text: 'Blog',
+      state: false
+    },
+    {
+      text: 'Portfolio',
+      state: false
+    },
+    {
+      text: 'Contact me',
+      state: false
+    }
   ]
 
   return (
