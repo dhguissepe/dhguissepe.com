@@ -3,37 +3,14 @@ import Navbar from './Navbar'
 import Logo from './Logo'
 import { Link } from 'react-router-dom'
 
-function Header() {
-  const navbarButtonNames = [
-    {
-      text: 'Home',
-      state: 'active'
-    },
-    {
-      text: 'About me',
-      state: false
-    },
-    {
-      text: 'Blog',
-      state: false
-    },
-    {
-      text: 'Portfolio',
-      state: false
-    },
-    {
-      text: 'Contact me',
-      state: false
-    }
-  ]
-
+function Header(props) {
   return (
     <header className="header">
       <div className="header-wrapper">
         <Link to="/" className="header-logo">
           <Logo />
         </Link>
-        <Navbar buttonNames={navbarButtonNames} />
+        <Navbar buttonNames={props.navbarButtonNames} />
       </div>
     </header>
   )

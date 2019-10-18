@@ -1,12 +1,14 @@
 /*font-styles*/
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
-// @import url('https://fonts.googleapis.com/css?family=Anton');
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,600&display=swap');
 
 //lib: variables, functions and settings
 @import 'lib/variables';
 @import 'lib/functions';
 @import 'lib/mixins';
+
+//layout-styles
+@import 'layout/layout';
 
 //base-style
 @import 'base-style/links';
@@ -25,8 +27,6 @@
 @import 'components/hoverSection';
 @import 'components/logo';
 @import 'components/navbar';
+@import 'components/brandBio';
 // @import 'components/pageLoading';
 // @import 'components/pageError';
-
-//layout-styles
-@import 'layout/layout';

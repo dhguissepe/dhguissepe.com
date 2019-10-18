@@ -1,7 +1,6 @@
 import React from 'react'
 import Logo from './Logo'
 
-
 function Hero() {
   return (
     <div className="hero">
@@ -12,7 +11,7 @@ function Hero() {
               <Logo />
             </div>
             <div className="hero-description">
-              <h2>Full Stack Developer | React Frontend Expert</h2>
+              <h2>Full Stack Developer | React Development Expert</h2>
             </div>
             <div className="hero-title">
               <h1>D.H. Guissepe</h1>

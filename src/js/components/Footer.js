@@ -2,33 +2,10 @@ import React from 'react'
 import Navbar from './Navbar'
 import Logo from './Logo'
 
-function Footer() {
-  const navbarButtonNames = [
-    {
-      text: 'Home',
-      state: 'active'
-    },
-    {
-      text: 'About me',
-      state: false
-    },
-    {
-      text: 'Blog',
-      state: false
-    },
-    {
-      text: 'Portfolio',
-      state: false
-    },
-    {
-      text: 'Contact me',
-      state: false
-    }
-  ]
-
+function Footer(props) {
   return (
     <footer className="footer">
-      <Navbar buttonNames={navbarButtonNames} />
+      <Navbar buttonNames={props.navbarButtonNames} />
       <div className="footer-wrapper">
         <div className="footer-brand">
           <p className="owner">D.H.G</p>

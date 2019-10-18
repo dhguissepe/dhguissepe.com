@@ -1,0 +1,35 @@
+/*BRAND BIO*/
+
+.brand-bio {
+  align-items: center;
+  background: $darker-blue;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+  justify-content: center;
+
+}
+
+.brand-bio-wrapper {
+  max-width: 1024px;
+  width: 100%;
+
+  i {
+    font-weight: 400;
+    opacity: 0.3;
+  }
+}
+
+.brand-bio-title {
+  font-size: 4em;
+  font-weight: 400;
+  text-align: center;
+}
+
+.brand-bio-text {
+  display: block;
+  font-size: 2em;
+  margin: 0 auto 2em;
+  text-align: center;
+}

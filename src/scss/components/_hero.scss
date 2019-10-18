@@ -14,7 +14,7 @@
 }
 
 .hero-overlay-2 {
-  @include overlay(overlay1, $hero-overlay-2-background);
+  @include overlay(overlay2, $hero-overlay-2-background);
   align-items: center;
   display: flex;
   height: $hero-overlay-2-height;
@@ -47,7 +47,7 @@
   justify-content: center;
   h2 {
     font-weight: 400;
-    font-size: 1.43em;
+    font-size: 1.326em;
     margin: 0;
     text-align: center;
   }

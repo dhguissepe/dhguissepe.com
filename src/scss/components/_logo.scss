@@ -57,7 +57,6 @@
   .sq-g-part-1, .sq-g-part-2, .sq-g-part-3 {
     box-sizing: border-box;
     width: 100%;
-    transition: 0.3s;
   }
 
   .sq-g-part-1 {
@@ -97,7 +96,8 @@
 
   .sq-g-part-1, .sq-g-part-2, .sq-g-part-3,
   .sq-d-part-1, .sq-d-part-2, .sq-d-part-3 {
-      border-color: $logo-link-color;
+      border-color: $ultra-light-gray;
+      transition: 0.3s;
     }
 
   &:hover {
@@ -106,12 +106,10 @@
     }
 
     .sq-d-part-1, .sq-d-part-2, .sq-d-part-3 {
-      border-color: $skyblue;
+      border-color: lighten($skyblue, 10%);
     }
   }
 }
-
-//footer logo
 
 .footer-logo {
   @include dh-logo($footer-logo-size);

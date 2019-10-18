@@ -11,7 +11,6 @@ function Navbar(props) {
               <Link
                 className={ `navbar-link ${ item.state }` }
                 to="/"
-                href="#"
               >
                 { item.text }
               </Link>
