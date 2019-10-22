@@ -4,6 +4,7 @@ import CTA from '../components/CTA.js'
 import HoverSection from '../components/HoverSection.js'
 import BrandBio from '../components/BrandBio.js'
 class Home extends Component {
+
   render() {
     return (
       <Fragment>

@@ -10,7 +10,7 @@ function Header(props) {
         <Link to="/" className="header-logo">
           <Logo />
         </Link>
-        <Navbar buttonNames={props.navbarButtonNames} />
+        <Navbar links={ props.navbarLinks } onClick={ props.onClick } />
       </div>
     </header>
   )

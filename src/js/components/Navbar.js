@@ -5,12 +5,14 @@ function Navbar(props) {
   return (
     <nav className="navbar">
       <ul>
-        {props.buttonNames.map( (item, index) => {
+        {props.links.map( (item, index) => {
           return (
             <li className="navbar-links" key={ index } >
               <Link
                 className={ `navbar-link ${ item.state }` }
-                to="/"
+                to={ item.path }
+                id={ index }
+                onClick= { props.onClick }
               >
                 { item.text }
               </Link>

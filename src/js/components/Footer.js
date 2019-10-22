@@ -5,7 +5,7 @@ import Logo from './Logo'
 function Footer(props) {
   return (
     <footer className="footer">
-      <Navbar buttonNames={props.navbarButtonNames} />
+      <Navbar links={ props.navbarLinks } onClick={ props.onClick } />
       <div className="footer-wrapper">
         <div className="footer-brand">
           <p className="owner">D.H.G</p>

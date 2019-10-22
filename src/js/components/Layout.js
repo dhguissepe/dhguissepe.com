@@ -1,38 +1,31 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, Component } from 'react'
 import Header from './Header'
 import Footer from './Footer'
+import { connect } from 'react-redux'
+import store from '../../redux/store.js'
+import { navigationUpdate } from '../../redux/modules/navigation'
 
-const navbarButtonNames = [
-  {
-    text: 'Home',
-    state: 'active'
-  },
-  {
-    text: 'About me',
-    state: false
-  },
-  {
-    text: 'Blog',
-    state: false
-  },
-  {
-    text: 'Portfolio',
-    state: false
-  },
-  {
-    text: 'Contact me',
-    state: false
+function mapStateToProps(state) {
+  return {
+    navbarLinks: state.navigation.navbarLinks,
   }
-]
+}
+class Layout extends Component {
 
-function Layout(props) {
-  return (
-    <Fragment>
-      <Header navbarButtonNames={ navbarButtonNames }/>
-        {props.children}
-      <Footer navbarButtonNames={ navbarButtonNames }/>
-    </Fragment>
-  )
+  handleClick = (e) => {
+    store.dispatch(navigationUpdate(e.target.id))
+    this.setState({ pageIndex: e.target.id })
+  }
+
+  render() {
+    return (
+      <Fragment>
+        <Header navbarLinks={ this.props.navbarLinks } onClick={ this.handleClick } />
+          {this.props.children}
+        <Footer navbarLinks={ this.props.navbarLinks } onClick={ this.handleClick } />
+      </Fragment>
+    )
+  }
 }
 
-export default Layout
+export default connect(mapStateToProps)(Layout)
